@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+#root {
+	border: 1px solid rgb(209, 209, 209);
+	border-radius: 5px;
+	padding: 50px 40px;
+	background-color: white;
+	box-shadow: 3px 5px 5px rgb(209, 209, 209);
+}
+
+body {
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.todoList {
+	width: 350px;
+}
+
+.todoListItem {
+	justify-content: space-between;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+ul {
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid rgb(209, 209, 209);
+	border-radius: 5px;
+	box-shadow: 3px 0px 5px rgb(209, 209, 209);
+	color: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 10px 20px 10px 20px;
+	margin: 10px 0;
+}
+
+input[type='checkbox'] {
+	margin-right: 20px;
+	-ms-transform: scale(1.5); /* IE */
+	-moz-transform: scale(1.5); /* FF */
+	-webkit-transform: scale(1.5); /* Safari and Chrome */
+	-o-transform: scale(1.5); /* Opera */
+	transform: scale(1.5);
+	padding: 10px;
+}
+
+label {
+	display: inline-block;
+	margin: 10px 0;
+}
+
+input[type='text'] {
+	border: 1px solid #dedede;
+	border-radius: 2px;
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	margin: 0;
+}
+
+.addBtn {
+	cursor: pointer;
+	background-color: #9c88ff;
+	box-shadow: var(--box-shadow);
+	color: #fff;
+	border: 0;
+	display: block;
+	font-size: 16px;
+	margin: 10px 0 30px;
+	padding: 10px;
+	width: 100%;
+}
+
+.deleteBtn {
+	border: none;
+	padding: 7px;
+	background-color: white;
+}
+
+.deleteBtn:hover {
+	cursor: pointer;
+}
