@@ -3,9 +3,13 @@
  * https://jestjs.io/docs/en/configuration.html
  */
 
+import register from 'ignore-styles';
+register(['.css', '.sass', '.scss']);
+
 export default {
 	// All imported modules in your tests should be mocked automatically
-	automock: true,
+	// automock: false,
+	// automock: true,
 
 	// Stop running tests after `n` failures
 	// bail: 0,
@@ -14,7 +18,7 @@ export default {
 	// cacheDirectory: "/private/var/folders/fp/xzh030y92pqc9nkh6vktr25c0000gp/T/jest_dy",
 
 	// Automatically clear mock calls and instances between every test
-	clearMocks: true,
+	// clearMocks: true,
 
 	// Indicates whether the coverage information should be collected while executing the test
 	// collectCoverage: false,
@@ -82,6 +86,10 @@ export default {
 
 	// A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
 	// moduleNameMapper: {},
+	// moduleNameMapper: {
+	// 	'/.(css|jpg|png)$/':
+	// 		'/Users/kirstenyoon/csProdProjects/react-typscript-todo/empty-module.js',
+	// },
 
 	// An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
 	// modulePathIgnorePatterns: [],
